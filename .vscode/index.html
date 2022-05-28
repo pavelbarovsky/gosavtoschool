@@ -4,35 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>gosavto</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">  
 </head>
 <body>
     
-    <header class="header">
-        <h1 class="header-title">Pavel Barovsky</h1>
-        <p class="header-sybtitle">Web-developer, front-end developer, web Designer, freelancer</p>
-        <div class="header-arrow">
+    <header class="header" id="header">
+        <img class="logotype" src="./img/header/logo.png" alt="logotype">
+        <h1 class="header-title">ГОСАВТОШКОЛА</h1>
+        <p class="header-sybtitle">Городская, открытая, современная</p>
+        <a href="#portfolio" class="header-arrow">
             <img src="./img/header/chevron-down.svg" alt="arrow">
-        </div>
+        </a>
     </header>  
 
     <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
-                <h2 class="portfolio-header">Portfolio</h2>
+                <div class="portfolio-header-logo">
+                    <h2 class="portfolio-header1">ГОС</h2>
+                    <h2 class="portfolio-header2">АВТО</h2>
+                    <h2 class="portfolio-header3">ШКОЛА</h2>
+                </div>
+                
 
                 <!-- porfolio-cards-wrapper -->
                 <div class="porfolio-cards-wrapper">
 
                     <!-- CARD  -->
                     <div class="card">
-                        <a href="m1.html" class="card-link">
-                            <img class="card-img" src="./img/portfolio/m1.jpg" alt="Многостраничный сайт">
-                            <h3 class="card-title">Multipage site.</h3>
-                            <p>Multi-page site layout.</p>
+                        <a href="manager.html" class="card-link">
+                            <h3 class="card-title">Связаться с менеджером</h3>
+                        </a>
+                    </div>
+                    <!-- CARD END -->
+
+                    <!-- CARD  -->
+                    <div class="card">
+                        <a href="enroll.html" class="card-link">
+                            <h3 class="card-title">Записаться в ГОСавтошколу</h3>
+                        </a>
+                    </div>
+                    <!-- CARD END -->
+
+                    <!-- CARD  -->
+                    <div class="card">
+                        <a href="./stydy.html" class="card-link">
+                            <h3 class="card-title">Про ГОСавтошколу</h3>
                         </a>
                     </div>
                     <!-- CARD END -->
@@ -40,29 +59,7 @@
                     <!-- CARD  -->
                     <div class="card">
                         <a href="m1.html" class="card-link">
-                            <img class="card-img" src="./img/portfolio/m2.jpg" alt="Адаптивный лендинг">
-                            <h3 class="card-title">Adaptive landing.</h3>
-                            <p>Multi-page site layout.</p>
-                        </a>
-                    </div>
-                    <!-- CARD END -->
-
-                    <!-- CARD  -->
-                    <div class="card">
-                        <a href="m1.html" class="card-link">
-                            <img class="card-img" src="./img/portfolio/m3.jpg" alt="Личный сайт ">
-                            <h3 class="card-title">Personal site.</h3>
-                            <p>Multi-page site layout.</p>
-                        </a>
-                    </div>
-                    <!-- CARD END -->
-
-                    <!-- CARD  -->
-                    <div class="card">
-                        <a href="m1.html" class="card-link">
-                            <img class="card-img" src="./img/portfolio/m4.jpg" alt="Интернет магазин">
-                            <h3 class="card-title">Webstore</h3>
-                            <p>Multi-page site layout.</p>
+                            <h3 class="card-title">Программы обучения</h3>
                         </a>
                     </div>
                     <!-- CARD END -->
@@ -76,29 +73,40 @@
         <div class="container">
             <div class="footer-row">
                 <div class="footer-copyright footer-col">
-                    <div class="footer-copyright-name">© Pavel Barovsky</div>
-                    <p>HTML layout and website development</p> 
+                    <div class="footer-copyright-name">© «Автошкола92»</div>
+                    <p> 2016 -2022 все права защищены</p> 
                 </div>
                     <!-- ICONS -->
                     <div class="footer-icons footer-col">
-                        <p>My social networks</p>
                         <div class="footer-icons-row">
-                            <a href="https://vk.com/pbarovsky">
-                                <img src="./img/icons/vk.svg" alt="">
+                            <a href="https://vk.com/gosavtoschool">
+                                <img src="./img/icons/vk.png" alt="ВК">
                             </a>
-                            <a href="https://www.instagram.com/whatdefuckiwish/">
-                                <img src="./img/icons/instagram.svg" alt="">
+                            <a href="https://t.me/gosavtoschool92">
+                                <img src="./img/icons/telegram.png" alt="ТЕЛЕГА">
                             </a>
-                            <a href="https://github.com/pavelbarovsky">
-                                <img src="./img/icons/github.svg" alt="">
+                            <a href="https://ok.ru/group/61429862367407">
+                                <img src="./img/icons/odnoklass.png" alt="ОДНОКЛАССНИКИ">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC2RnUv4mHNrzqjsBu4uXuqg">
+                                <img src="./img/icons/youtube.png" alt="ЮТУБ">
+                            </a>
+                            <a href="https://xn--92-6kcaj2chwb1b5d.xn--p1ai/">
+                                <img src="./img/icons/site.png" alt="ОФ.САЙТ">
                             </a>
                         </div>
                     </div>
                     <!-- ICONS END -->
-
             </div>
         </div>
     </footer>
+
+    <!--библиотеки и плагигы-->
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <!--собственные скрипыт и вызовы библиотек-->
+    <script src="./js/main.js"></script>
 
 </body>
 </html>

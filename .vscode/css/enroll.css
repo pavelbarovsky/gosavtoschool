@@ -1,0 +1,75 @@
+.inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 444px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+.search-label {  /*строка поиска*/
+    height: 100%;
+    display: flex;
+}
+
+.search-input {
+    padding: 0 17px; /*отступ для строки поиска*/
+    flex-grow: 1;
+
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Circular Std';
+}
+
+.search-input::placeholder {
+    color: rgba(0,0,0,0.2);  /*делаем текст прозрачным*/
+}
+
+.search-icon {
+    margin-top: 12px;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.inform-cards-wrapper { /*правильное размещение карточек (флексбокс)*/
+    display: flex;
+    flex-direction: column;
+}
+
+.inform-card {
+    margin-top: 20px;
+    margin-bottom: 30px; /*внешний нижний отступ карточек*/
+    background-color: #FFFFFF;
+
+    box-sizing: border-box; /*ширина для блока включая контент, паддинги, рамки*/
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35); /*тень карточек*/
+
+    border: 0px solid #000000; /*окантовка кнопки*/
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    text-transform: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in; /*плавная анимация вверх при наведении на карточку*/
+}
+
+.inform-card:hover {
+    background-color: #F09533;
+    transform: translateY(-15px); /*чтобы при наведении карточка поднималась вверх по Y*/
+}
+
+.card-link {
+    padding: 20px; /*внутренний отступ со всех сторон*/
+    color:#000000; /*чтобы ссылка всегда была черной*/
+    text-decoration: none; /*убрали подчеркивание ссылки карточки*/
+    display: block; /*чтобы ссылка оборачивала всю карточку*/
+    transition: color 0.3s ease-in; /*плавная анимация смены цвета при наведении на карточку*/
+}
+
+.card-link:hover {
+    color:rgb(255, 255, 255); /*чтобы при наведение на карточку текст становился цветной*/
+}
