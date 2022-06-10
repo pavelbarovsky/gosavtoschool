@@ -94,36 +94,36 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
-    margin-left: 350px;
+    justify-content: center;
+    margin-right: auto;
     margin-top: 10px;
 }
 
 .portfolio-header1 {
+    text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 46px;
     line-height: 130%;
-    text-align: center;
     color: #F09533;
 }
 
 .portfolio-header2 {
+    text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 46px;
     line-height: 130%;
-    text-align: center;
     color: #000000;
 }
 
 
 .portfolio-header3 {
+    text-align: center;
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 46px;
     line-height: 130%;
-    text-align: center;
     color: #000000;
 }
 
@@ -135,7 +135,6 @@ body {
 }
 
 .card {
-    margin-left: 30px;
     margin-bottom: 30px; /*внешний нижний отступ карточек*/
     background-color: #FFFFFF;
     height: 100px;
@@ -212,11 +211,11 @@ body {
 .footer-row {  /*выравнивание контента в ряд*/
     display: flex;  
     flex-direction: row; /*в ряд*/
-    justify-content: space-between; /*выравнивание внутри ряда по Х*/
+    justify-content: center; /*выравнивание внутри ряда по Х*/
 }
 
 .footer-col {  /*для контактов, кнопок и иконок общее свойство*/
-    max-width: 350px;
+    max-width: auto;
     flex-grow: 1; /* делает пространство каждого блока до 350px*/
 }
 

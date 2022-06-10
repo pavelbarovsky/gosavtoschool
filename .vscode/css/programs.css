@@ -49,7 +49,7 @@ body {
 .porfolio-cards-wrapper { /*правильное размещение карточек (флексбокс)*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /*выравнивание элементов по X, по краям контейнера*/
+    justify-content: center; /*выравнивание элементов по X, по краям контейнера*/
 }
 
 .card {
@@ -82,7 +82,7 @@ body {
 }
 
 .card:nth-last-child(2) {  /*псевдоселектор (выбираем элемент класса по номеру с конца, предпоследняя карточка)*/
-    margin-bottom: 0; /*убрали отступ под карточкой*/
+    margin-top: 0px; /*убрали отступ под карточкой*/
 }
 
 .card-img {
@@ -118,11 +118,11 @@ body {
 .footer-row {  /*выравнивание контента в ряд*/
     display: flex;  
     flex-direction: row; /*в ряд*/
-    justify-content: space-between; /*выравнивание внутри ряда по Х*/
+    justify-content: center; /*выравнивание внутри ряда по Х*/
 }
 
 .footer-col {  /*для контактов, кнопок и иконок общее свойство*/
-    max-width: 350px;
+    max-width: auto;
     flex-grow: 1; /* делает пространство каждого блока до 350px*/
 }
 

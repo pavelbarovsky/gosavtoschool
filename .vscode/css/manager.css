@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; /*выравнивание элементов по X, по краям контейнера*/
-    margin-left: 20px;
+
 }
 
 .chat-img {
@@ -15,6 +15,7 @@
 .chat-cards-wrapper { /*правильное размещение карточек (флексбокс)*/
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .chat-card {
@@ -56,28 +57,29 @@
 
 .videochat {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; /*выравнивание элементов по X, по краям контейнера*/
+    flex-direction: column;
+    justify-content: center; /*выравнивание элементов по X, по краям контейнера*/
 }
 
 .videochat-img {
     margin-bottom: 70px; /*отступ от картинки к тексту*/
-    height: 50%;
-    width: 50%;
 }
 
 .videochat-cards-wrapper { /*правильное размещение карточек (флексбокс)*/
     display: flex;
-    
+    flex-wrap: wrap;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .videochat-card {
+    margin-top: 20px;
     margin-bottom: 30px; /*внешний нижний отступ карточек*/
     background-color: #FFFFFF;
 
+    height: 80px;
+    width: 200px;
     box-sizing:border-box; /*ширина для блока включая контент, паддинги, рамки*/
     box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35); /*тень карточек*/
 

@@ -30,7 +30,7 @@
     margin-right: auto;
 }
 
-about-descriptions p {
+.about-descriptions p {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 0;
@@ -83,14 +83,6 @@ about-descriptions p {
 .colorh3 {
     color: #F09533;
 }
-
-
-.inform-cards-wrapper { /*правильное размещение карточек (флексбокс)*/
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 
 .price-card {
